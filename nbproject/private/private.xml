@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Shield_Wood.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Potion_Red.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/entity/Entity.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/KeyHandler.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/monster/MON_GreenSlime.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/EventHandler.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/tile/Tile.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Boots.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Heart.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Axe.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/entity/NPC_Oldman.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/CollisionDetecter.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/GamePanel.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Door.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/Main.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/UI.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/EventRect.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Chest.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_ManaCrystal.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Shield_Blue.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/AssetSetter.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/Sound.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/UtilityTool.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Sword_Normal.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Key.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/entity/Player.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/entity/Projectile.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/tile/TileManager.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Rock.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Fireball.java</file>
+        </group>
+    </open-files>
+</project-private>
