@@ -1,5 +1,6 @@
 package main;
 
+import data.SaveLoad;
 import entity.Entity;
 import entity.Player;
 import java.awt.Color;
@@ -36,18 +37,22 @@ public class GamePanel extends JPanel implements Runnable {
     int screenHeight2 = screenHight;
     BufferedImage tempScreen;
     Graphics2D g2;
+    public boolean fullScreenOn = false;
+    
     //FPS
     int FPS = 60;
     
     //system
     TileManager tileM = new TileManager(this);
     public KeyHandler keyH = new KeyHandler(this);
-    Sound music = new Sound();
-    Sound se = new Sound();
+    public Sound music = new Sound();
+    public Sound se = new Sound();
     public CollisionDetecter CDetecter = new CollisionDetecter(this);
     public AssetSetter aSetter = new AssetSetter(this);
     public UI ui = new UI(this);
     public EventHandler eHandler = new EventHandler(this);
+    Config config = new Config(this);
+    public SaveLoad saveLoad = new SaveLoad(this);
     Thread gameThread;
     
     //entity and object
@@ -65,6 +70,7 @@ public class GamePanel extends JPanel implements Runnable {
     public final int pauseState = 2;
     public final int dialogueState = 3;
     public final int optionsState = 4;
+    public final int gameOverState = 5;
     
     public GamePanel(){
         this.setPreferredSize(new Dimension(screenWidth, screenHight));
@@ -82,7 +88,23 @@ public class GamePanel extends JPanel implements Runnable {
         gameState = titleState;
         tempScreen = new BufferedImage(screenWidth, screenHight, BufferedImage.TYPE_INT_ARGB);
         g2 = (Graphics2D)tempScreen.getGraphics();
-        setFullScreen();
+        if(fullScreenOn == true){
+            setFullScreen();    
+        }
+    }
+    public void Retry(){
+        player.setDefaultPositions();
+        player.restoreLifeAndMana();
+        aSetter.setNPC();
+        aSetter.setMonster();
+        
+    }
+    public void Restart(){
+        player.setDefaultValues();
+        player.setItems();
+        aSetter.setObject();
+        aSetter.setNPC();
+        aSetter.setMonster();
     }
     public void setFullScreen(){
         //get local screen device

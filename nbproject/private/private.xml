@@ -16,12 +16,15 @@
             <file>file:/home/aziz/NetBeansProjects/main/src/entity/NPC_Oldman.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/main/CollisionDetecter.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/main/GamePanel.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/data/DataSave.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Door.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/main/Main.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/main/UI.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/main/Config.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/main/EventRect.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Chest.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_ManaCrystal.java</file>
+            <file>file:/home/aziz/NetBeansProjects/main/src/data/SaveLoad.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/object/OBJ_Shield_Blue.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/main/AssetSetter.java</file>
             <file>file:/home/aziz/NetBeansProjects/main/src/main/Sound.java</file>

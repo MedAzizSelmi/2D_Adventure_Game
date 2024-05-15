@@ -54,6 +54,7 @@ public class Entity {
     public final int type_axe = 4;
     public final int type_shield = 5;
     public final int type_consumable = 6;
+    public final int type_obstacle = 7;
     //plqyer stats
     public int maxLife;
     public int life;
@@ -75,6 +76,8 @@ public class Entity {
     public int defenceValue;
     public String description = "";
     public int useCost;
+    public boolean stackable = false;
+    public int amount = 1;
     
     public Entity(GamePanel gp){
         

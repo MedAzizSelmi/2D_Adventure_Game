@@ -9,7 +9,6 @@ import main.GamePanel;
 import main.KeyHandler;
 import object.OBJ_Fireball;
 import object.OBJ_Key;
-import object.OBJ_Rock;
 import object.OBJ_Shield_Wood;
 import object.OBJ_Sword_Normal;
 
@@ -73,7 +72,18 @@ public class Player extends Entity {
         attack = getAttack();
         defence = getDefence();
     }
+    public void setDefaultPositions(){
+        worldX = gp.tileSize * 23;
+        worldY = gp.tileSize * 21;
+        direction = "down";
+    }
+    public void restoreLifeAndMana(){
+        life = maxLife;
+        mana = maxMana;
+        invincible = false;
+    }
     public void setItems(){
+        inventory.clear();
         inventory.add(currentWeapon);
         inventory.add(currentShield);
         inventory.add(new OBJ_Key(gp));
@@ -85,6 +95,24 @@ public class Player extends Entity {
     }
     public int getDefence(){
         return defence = dexterity * currentShield.defenceValue;
+    }
+    public int getCurrentWeaponSlot(){
+        int currentWeaponSlot = 0;
+        for(int i=0; i < inventory.size(); i++){
+            if(inventory.get(i) == currentWeapon){
+                currentWeaponSlot = i;
+            }
+        }
+        return currentWeaponSlot;
+    }
+    public int getCurrentShieldSlot(){
+        int currentShieldSlot = 0;
+        for(int i=0; i < inventory.size(); i++){
+            if(inventory.get(i) == currentShield){
+                currentShieldSlot = i;
+            }
+        }
+        return currentShieldSlot;
     }
     public void getPlayerImage(){
         
@@ -220,8 +248,18 @@ public class Player extends Entity {
         if(shotAvailableCounter < 30){
             shotAvailableCounter++;
         }
-        
-        
+        //fix bug life and mana
+        if(life > maxLife){
+            life = maxLife;
+        }
+        if(mana > maxMana){
+            mana = maxMana;
+        }
+        if(life <= 0){
+            gp.gameState = gp.gameOverState;
+            gp.music.stop();
+            gp.playSE(10);
+        }
 }
     public void attacking(){
         
